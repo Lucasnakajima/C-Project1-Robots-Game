@@ -8,7 +8,7 @@
 #include <cmath>
 using namespace std;
 
-double const PI = 3.1415926;
+double const PI = 3.141592653589793;
 
 class Person {
 public:
@@ -71,40 +71,40 @@ void moveRobots(Person hero, vector< vector <char> > &maze, vector< vector <int>
 		maze[robotList[i][0]][robotList[i][1]] = ' ';
 		//Moving the robots
 		if (angle >= 337.5 || angle < 22.5) {
-			//Angle closest to 0บ
+			//Angle closest to 0ยบ
 			robotList[i][1] ++;
 		}
 		else if (angle >= 22.5 && angle < 67.5) {
-			//Angle closest to 45บ
+			//Angle closest to 45ยบ
 			robotList[i][1] ++;
 			robotList[i][0] ++;
 		}
 		else if (angle >= 67.5 && angle < 112.5) {
-			//Angle closest to 90บ
+			//Angle closest to 90ยบ
 			robotList[i][0] ++;
 		}
 		else if (angle >= 112.5 && angle < 157.5) {
-			//Angle closest to 135บ
+			//Angle closest to 135ยบ
 			robotList[i][1]--;
 			robotList[i][0] ++;
 		}
 		else if (angle >= 157.5 && angle < 202.5) {
-			//Angle closest to 180บ
+			//Angle closest to 180ยบ
 			robotList[i][1]--;
 
 		}
 		else if (angle >= 202.5 && angle < 247.5) {
-			//Angle closest to 225บ
+			//Angle closest to 225ยบ
 			robotList[i][1]--;
 			robotList[i][0]--;
 
 		}
 		else if (angle >= 247.5 && angle < 292.5) {
-			//Angle closest to 270บ
+			//Angle closest to 270ยบ
 			robotList[i][0]--;
 		}
 		else {
-			//Angle closest to 315บ
+			//Angle closest to 315ยบ
 			robotList[i][0]--;
 			robotList[i][1]++;
 		}
